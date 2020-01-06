@@ -37,6 +37,11 @@
                BlueprintName = "CPPIntegrationDemoTests"
                ReferencedContainer = "container:CPPIntegrationDemo.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "CPPIntegrationDemoTests/testCustom()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>

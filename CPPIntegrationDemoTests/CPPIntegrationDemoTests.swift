@@ -6,29 +6,35 @@
 //  Copyright © 2020 Lexter Labra. All rights reserved.
 //
 
+import Foundation
 import XCTest
 @testable import CPPIntegrationDemo
+import CPPStaticLib
 
 class CPPIntegrationDemoTests: XCTestCase {
 
     func testAdd() {
-        XCTAssertEqual(Add(5, 5), 10)
+        XCTAssertEqual(Arithmetic.Add(5, 5), 10)
     }
-    
+
     func testSubtract() {
-        XCTAssertEqual(Subtract(5, 3), 2)
+        XCTAssertEqual(Arithmetic.Subtract(5, 3), 2)
     }
-    
+
     func testMultiply() {
-        XCTAssertEqual(Multiply(5, 3), 15)
+        XCTAssertEqual(Arithmetic.Multiply(5, 3), 15)
     }
-    
+
     func testDivide() {
-        XCTAssertEqual(Divide(8, 2), 4)
+        XCTAssertEqual(Arithmetic.Divide(8, 2), 4)
     }
-    
-    func testCustom() {
-        XCTAssertEqual(Custom(3, 4, { $0+$1 }), 7)
-    }
+
+//    func testCustom() {
+//        let res = Custom(2, 2) { (a, b) -> Double in
+//            print("\(a) + \(b)")
+//            return a + b
+//        }
+//        XCTAssertEqual(res, 2)
+//    }
 
 }

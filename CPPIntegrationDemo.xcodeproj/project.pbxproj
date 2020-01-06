@@ -15,9 +15,10 @@
 		DD5B822E23C0549600A21676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5B822C23C0549600A21676 /* LaunchScreen.storyboard */; };
 		DD5B823923C0549600A21676 /* CPPIntegrationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B823823C0549600A21676 /* CPPIntegrationDemoTests.swift */; };
 		DD5B824423C0549600A21676 /* CPPIntegrationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B824323C0549600A21676 /* CPPIntegrationDemoUITests.swift */; };
-		DD5B825323C054CE00A21676 /* libjunkcpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5B825123C054CE00A21676 /* libjunkcpp.a */; };
-		DD5B825423C054CE00A21676 /* libMathFuncs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5B825223C054CE00A21676 /* libMathFuncs.a */; };
-		DD5B825A23C054FC00A21676 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD5B825823C054FC00A21676 /* wrapper.cpp */; };
+		DD5B82CC23C3F6B000A21676 /* CPPStaticLib.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = DD5B82CA23C3F6B000A21676 /* CPPStaticLib.swiftmodule */; };
+		DD5B82CD23C3F6B000A21676 /* libCPPStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5B82CB23C3F6B000A21676 /* libCPPStaticLib.a */; };
+		DD5B82CE23C3F72400A21676 /* libCPPStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5B82CB23C3F6B000A21676 /* libCPPStaticLib.a */; };
+		DD5B82CF23C3F72800A21676 /* CPPStaticLib.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = DD5B82CA23C3F6B000A21676 /* CPPStaticLib.swiftmodule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,13 +53,9 @@
 		DD5B823F23C0549600A21676 /* CPPIntegrationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPPIntegrationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5B824323C0549600A21676 /* CPPIntegrationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPPIntegrationDemoUITests.swift; sourceTree = "<group>"; };
 		DD5B824523C0549600A21676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD5B825123C054CE00A21676 /* libjunkcpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjunkcpp.a; sourceTree = "<group>"; };
-		DD5B825223C054CE00A21676 /* libMathFuncs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMathFuncs.a; sourceTree = "<group>"; };
-		DD5B825523C054E000A21676 /* MathFuncsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathFuncsLib.h; sourceTree = "<group>"; };
-		DD5B825623C054E000A21676 /* junk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = junk.h; sourceTree = "<group>"; };
 		DD5B825723C054FC00A21676 /* CPPIntegrationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CPPIntegrationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		DD5B825823C054FC00A21676 /* wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
-		DD5B825923C054FC00A21676 /* wrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = wrapper.hpp; sourceTree = "<group>"; };
+		DD5B82CA23C3F6B000A21676 /* CPPStaticLib.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CPPStaticLib.swiftmodule; sourceTree = "<group>"; };
+		DD5B82CB23C3F6B000A21676 /* libCPPStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCPPStaticLib.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5B825323C054CE00A21676 /* libjunkcpp.a in Frameworks */,
-				DD5B825423C054CE00A21676 /* libMathFuncs.a in Frameworks */,
+				DD5B82CD23C3F6B000A21676 /* libCPPStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5B82CE23C3F72400A21676 /* libCPPStaticLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,17 +88,13 @@
 		DD5B821523C0549400A21676 = {
 			isa = PBXGroup;
 			children = (
-				DD5B825123C054CE00A21676 /* libjunkcpp.a */,
-				DD5B825223C054CE00A21676 /* libMathFuncs.a */,
-				DD5B825823C054FC00A21676 /* wrapper.cpp */,
-				DD5B825923C054FC00A21676 /* wrapper.hpp */,
-				DD5B825623C054E000A21676 /* junk.h */,
-				DD5B825523C054E000A21676 /* MathFuncsLib.h */,
+				DD5B82BD23C3EA5A00A21676 /* lib */,
 				DD5B822023C0549400A21676 /* CPPIntegrationDemo */,
 				DD5B823723C0549600A21676 /* CPPIntegrationDemoTests */,
 				DD5B824223C0549600A21676 /* CPPIntegrationDemoUITests */,
 				DD5B821F23C0549400A21676 /* Products */,
 				DD5B825723C054FC00A21676 /* CPPIntegrationDemo-Bridging-Header.h */,
+				DD5B82C823C3F67E00A21676 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +146,22 @@
 				DD5B824523C0549600A21676 /* Info.plist */,
 			);
 			path = CPPIntegrationDemoUITests;
+			sourceTree = "<group>";
+		};
+		DD5B82BD23C3EA5A00A21676 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DD5B82CA23C3F6B000A21676 /* CPPStaticLib.swiftmodule */,
+				DD5B82CB23C3F6B000A21676 /* libCPPStaticLib.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DD5B82C823C3F67E00A21676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +272,7 @@
 				DD5B822E23C0549600A21676 /* LaunchScreen.storyboard in Resources */,
 				DD5B822B23C0549600A21676 /* Preview Assets.xcassets in Resources */,
 				DD5B822823C0549600A21676 /* Assets.xcassets in Resources */,
+				DD5B82CC23C3F6B000A21676 /* CPPStaticLib.swiftmodule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5B82CF23C3F72800A21676 /* CPPStaticLib.swiftmodule in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +299,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD5B822223C0549400A21676 /* AppDelegate.swift in Sources */,
-				DD5B825A23C054FC00A21676 /* wrapper.cpp in Sources */,
 				DD5B822423C0549400A21676 /* SceneDelegate.swift in Sources */,
 				DD5B822623C0549400A21676 /* ContentView.swift in Sources */,
 			);
@@ -468,9 +478,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_OBJC_BRIDGING_HEADER = "CPPIntegrationDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -495,9 +507,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_OBJC_BRIDGING_HEADER = "CPPIntegrationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -518,8 +532,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPPIntegrationDemo.app/CPPIntegrationDemo";
@@ -540,8 +559,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPPIntegrationDemo.app/CPPIntegrationDemo";
