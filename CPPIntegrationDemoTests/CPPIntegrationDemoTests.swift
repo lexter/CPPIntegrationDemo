@@ -29,12 +29,13 @@ class CPPIntegrationDemoTests: XCTestCase {
         XCTAssertEqual(Arithmetic.Divide(8, 2), 4)
     }
 
-//    func testCustom() {
-//        let res = Custom(2, 2) { (a, b) -> Double in
+    func testCustom() {
+//        Arithmetic.callback = { (a, b) -> Double in
 //            print("\(a) + \(b)")
 //            return a + b
 //        }
+//        let res = Arithmetic.Custom(2, 2)
 //        XCTAssertEqual(res, 2)
-//    }
+    }
 
 }
