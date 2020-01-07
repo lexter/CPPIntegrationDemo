@@ -30,10 +30,7 @@ class CPPIntegrationDemoTests: XCTestCase {
     }
 
     func testCustom() {
-        let res = Arithmetic.Custom(2, 2) { (a, b) -> Double in
-            print("\(a) + \(b)")
-            return a + b
-        }
+        let res = Arithmetic.Custom(2, 2) { $0 + $1 }
         XCTAssertEqual(res, 4)
     }
 
