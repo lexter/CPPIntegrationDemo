@@ -30,12 +30,11 @@ class CPPIntegrationDemoTests: XCTestCase {
     }
 
     func testCustom() {
-//        Arithmetic.callback = { (a, b) -> Double in
-//            print("\(a) + \(b)")
-//            return a + b
-//        }
-//        let res = Arithmetic.Custom(2, 2)
-//        XCTAssertEqual(res, 2)
+        let res = Arithmetic.Custom(2, 2) { (a, b) -> Double in
+            print("\(a) + \(b)")
+            return a + b
+        }
+        XCTAssertEqual(res, 4)
     }
 
 }
