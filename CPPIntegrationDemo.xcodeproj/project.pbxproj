@@ -468,9 +468,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CPPIntegrationDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 828L3L6UDW;
+				DEVELOPMENT_TEAM = LR495ZAQN4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CPPIntegrationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +481,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.captioncall.CPPIntegrationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_OBJC_BRIDGING_HEADER = "CPPIntegrationDemo-Bridging-Header.h";
@@ -497,9 +498,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CPPIntegrationDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 828L3L6UDW;
+				DEVELOPMENT_TEAM = LR495ZAQN4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CPPIntegrationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +511,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lexlab.CPPIntegrationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.captioncall.CPPIntegrationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/lib";
 				SWIFT_OBJC_BRIDGING_HEADER = "CPPIntegrationDemo-Bridging-Header.h";
@@ -524,7 +526,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 828L3L6UDW;
+				DEVELOPMENT_TEAM = LR495ZAQN4;
 				INFOPLIST_FILE = CPPIntegrationDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -551,7 +553,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 828L3L6UDW;
+				DEVELOPMENT_TEAM = LR495ZAQN4;
 				INFOPLIST_FILE = CPPIntegrationDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
